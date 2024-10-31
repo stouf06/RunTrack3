@@ -1,0 +1,24 @@
+#melangerBtn {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#zoneJeu, #zoneOrdre {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.arc-img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+#resultat {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
