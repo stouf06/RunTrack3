@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="formulaireInscription" novalidate>
+        <label for="nom">Votre Nom:</label>
+        <input type="text" id="nom" name="nom" required pattern="^[A-Z]+$" title="Le nom doit être en majuscules.">
+        <span class="error-message">Le nom doit être en majuscules.</span>
+        <br><br>
+
+        <label for="prenom">Votre Prénom:</label>
+        <input type="text" id="prenom" name="prenom" required pattern="[A-ZÀ-Ý][a-zà-ÿA-ZÀ-Ý]*$" title="Le prénom doit commencer par une majuscule.">
+        <span class="error-message">Le prénom doit commencer par une majuscule.</span>
+        <br><br>
+        
+        <label for="email">Votre Email:</label>
+        <input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.(fr|com|io)$" title="Veuillez entrer un email valide.">
+        <span class="error-message">Veuillez entrer un email valide (se terminant par .fr, .com ou .io).</span>
+        <br><br>
+        
+        <label for="password">Choisissez un Mot de passe:</label>
+        <input type="password" id="password" name="password" required minlength="8" title="Le mot de passe doit comporter au moins 8 caractères.">
+        <span class="error-message">Le mot de passe doit comporter au moins 8 caractères.</span>
+        <br><br>
+
+        <label for="adresse">Votre Adresse:</label>
+        <input type="text" id="adresse" name="adresse" required>
+        <span class="error-message">L'adresse est obligatoire.</span>
+        <br><br>
+
+        <label for="codePostal">Votre Code Postal:</label>
+        <input type="number" id="codePostal" name="codePostal" required>
+        <span class="error-message">Le code postal est obligatoire.</span>
+        <br><br>
+
+        <input type="submit" value="S'inscrire">
+    </form>
+    
+    <!-- Lien pour revenir à la page de connexion -->
+    <p>Déjà inscrit ? <a href="connexion.html">Connectez-vous ici</a></p>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
