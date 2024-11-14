@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grille Bootstrap</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .section-1 { background-color: #b3e5fc; height: 150px; margin-bottom: 15px; margin-top: 15px; }
+    .section-2 { background-color: #90caf9; height: 150px; margin-bottom: 15px; }
+    .section-3 { background-color: #ce93d8; height: 150px; margin-bottom: 15px; }
+    .section-4 { background-color: #ffccbc; height: 50px; margin-bottom: 15px;  }
+    
+    /* Ajout d'un padding entre les colonnes pour simuler le gap */
+    .row-gap > [class^="col-"] {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Première section pleine largeur -->
+  <div class="row">
+    <div class="col-12 section-1"></div>
+  </div>
+
+  <!-- Trois colonnes égales pour la deuxième section, avec un gap entre les colonnes -->
+  <div class="row row-gap">
+    <div class="col-md-4 col-12 section-2"></div>
+    <div class="col-md-4 col-12 section-2"></div>
+    <div class="col-md-4 col-12 section-2"></div>
+  </div>
+
+  <!-- Deux colonnes pour la troisième section, avec un gap entre les colonnes -->
+  <div class="row row-gap">
+    <div class="col-md-8 col-12 section-3"></div>
+    <div class="col-md-4 col-12 section-3"></div>
+  </div>
+
+  <!-- Quatre petites sections alignées horizontalement en bas, avec un gap entre les colonnes -->
+  <div class="row row-gap">
+    <div class="col-md-3 col-12 section-4"></div>
+    <div class="col-md-3 col-12 section-4"></div>
+    <div class="col-md-3 col-12 section-4"></div>
+    <div class="col-md-3 col-12 section-4"></div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
