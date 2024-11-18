@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html">Inscription</a></li>
+                <li><a href="index.html">Connexion</a></li>
+                <li><a href="index.html">Rechercher</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Bienvenue sur notre site</h1>
+        <p>Contenu principal de la page.</p>
+
+        <section>
+            <h2>Créer un compte</h2>
+            <form action="index.html" method="post">
+                <!-- Civilité -->
+                <label>Civilité :</label><br>
+                <input type="radio" id="civilite-monsieur" name="civilite" value="monsieur">
+                <label for="civilite-monsieur">Monsieur</label>
+                <input type="radio" id="civilite-madame" name="civilite" value="madame">
+                <label for="civilite-madame">Madame</label>
+                <input type="radio" id="civilite-autre" name="civilite" value="autre">
+                <label for="civilite-autre">Autre</label><br><br>
+
+                <!-- Prénom -->
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required><br><br>
+
+                <!-- Nom -->
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required><br><br>
+
+                <!-- Adresse -->
+                <label for="adresse">Adresse :</label>
+                <input type="text" id="adresse" name="adresse"><br><br>
+
+                <!-- Email -->
+                <label for="email">Adresse Email :</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <!-- Mot de passe -->
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <!-- Validation du mot de passe -->
+                <label for="password-confirm">Confirmer le mot de passe :</label>
+                <input type="password" id="password-confirm" name="password_confirm" required><br><br>
+
+                <!-- Passions -->
+                <label>Passions :</label><br>
+                <input type="checkbox" id="passion-informatique" name="passions" value="informatique">
+                <label for="passion-informatique">Informatique</label><br>
+                <input type="checkbox" id="passion-voyages" name="passions" value="voyages">
+                <label for="passion-voyages">Voyages</label><br>
+                <input type="checkbox" id="passion-sport" name="passions" value="sport">
+                <label for="passion-sport">Sport</label><br>
+                <input type="checkbox" id="passion-lecture" name="passions" value="lecture">
+                <label for="passion-lecture">Lecture</label><br><br>
+
+                <!-- Bouton de validation -->
+                <button type="submit">Créer un compte</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html">Inscription</a></li>
+            <li><a href="index.html">Connexion</a></li>
+            <li><a href="index.html">Rechercher</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
